@@ -13,4 +13,9 @@ export const SplashPageLogo = styled.img`
   width: 14rem;
   height: 14rem;
   margin-bottom: 3.2rem;
+
+  @media screen and (max-width: 480px) {
+    width: 12rem;
+    height: 12rem;
+  }
 `;
