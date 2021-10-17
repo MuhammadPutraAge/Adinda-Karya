@@ -1,8 +1,13 @@
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { SplashPage } from "./pages";
+
 const App = () => {
   return (
-    <div>
-      <h1>Meubel Adinda Karya</h1>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={SplashPage} />
+      </Switch>
+    </Router>
   );
 };
 
