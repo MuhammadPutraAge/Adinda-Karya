@@ -21,13 +21,9 @@ import {
 } from "./NavbarStyles";
 
 const Navbar = () => {
-  const location = useLocation();
+  const { pathname } = useLocation();
 
-  if (
-    location.pathname === "/" ||
-    location.pathname === "/masuk" ||
-    location.pathname === "/daftar"
-  ) {
+  if (pathname === "/" || pathname === "/masuk" || pathname === "/daftar") {
     return <></>;
   }
 
@@ -35,7 +31,7 @@ const Navbar = () => {
     <NavbarContainer>
       <Container>
         <Nav>
-          <NavLogoContainer>
+          <NavLogoContainer to="/">
             <NavLogo src={LogoWhite} alt="Logo Meubel Adinda Karya" />
             <NavBrandContainer>
               <NavBrandSubtitle>Meubel</NavBrandSubtitle>
@@ -45,7 +41,7 @@ const Navbar = () => {
 
           <NavMainContainer>
             <NavSearchContainer>
-              <NavSearchInput placeholder="Lemari, Meja Kantor" />
+              <NavSearchInput type="search" placeholder="Lemari, Meja Kantor" />
               <NavSearchButtonContainer>
                 <NavSearchButton src={IcSearch} alt="Cari Furnitur" />
               </NavSearchButtonContainer>

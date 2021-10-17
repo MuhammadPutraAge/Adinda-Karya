@@ -30,9 +30,10 @@ export const Nav = styled.nav`
   }
 `;
 
-export const NavLogoContainer = styled.div`
+export const NavLogoContainer = styled(Link)`
   display: flex;
   align-items: center;
+  text-decoration: none;
 
   @media screen and (max-width: 1200px) {
     align-self: flex-start;
