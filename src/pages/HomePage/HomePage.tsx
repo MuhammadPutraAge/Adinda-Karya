@@ -1,3 +1,4 @@
+import { useHistory } from "react-router";
 import { CustomButton, FurnitureItem } from "../../components";
 import {
   categories,
@@ -7,6 +8,7 @@ import {
 import { Container } from "../../GlobalStyle";
 import CategoryItem from "./CategoryItem/CategoryItem";
 import {
+  HomePageButton,
   HomePageButtonContainer,
   HomePageCategory,
   HomePageContainer,
@@ -17,6 +19,8 @@ import {
 } from "./HomePageStyles";
 
 const HomePage = () => {
+  const history = useHistory();
+
   return (
     <HomePageContainer>
       <Container>
@@ -56,7 +60,12 @@ const HomePage = () => {
         </HomePageNewFurniture>
 
         <HomePageButtonContainer>
-          <CustomButton to="/furniture" title="Lihat Semua Furnitur" />
+          <HomePageButton>
+            <CustomButton
+              onClick={() => history.push("/furnitur")}
+              title="Lihat Semua Furnitur"
+            />
+          </HomePageButton>
         </HomePageButtonContainer>
       </Container>
     </HomePageContainer>

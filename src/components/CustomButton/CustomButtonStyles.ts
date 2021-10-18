@@ -1,28 +1,28 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { colors } from "../../utils";
 
-export const CustomButtonContainer = styled(Link)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 28rem;
-  padding: 1.5rem 2.7rem;
-  background-color: ${colors.black};
+interface CustomButtonContainerProps {
+  type: "primary" | "secondary";
+}
+
+interface CustomButtonTitleProps {
+  type: "primary" | "secondary";
+}
+
+export const CustomButtonContainer = styled.div<CustomButtonContainerProps>`
+  width: 100%;
+  padding: 1.2rem 2.7rem;
+  background-color: ${(props) =>
+    props.type === "primary" ? colors.black : colors.white};
+  border: 2px solid ${colors.black};
   border-radius: 0.4rem;
   text-decoration: none;
-
-  @media screen and (max-width: 480px) {
-    min-width: 16rem;
-  }
+  cursor: pointer;
 `;
 
-export const CustomButtonTitle = styled.p`
-  color: ${colors.white};
-  font-size: 1.6rem;
+export const CustomButtonTitle = styled.p<CustomButtonTitleProps>`
+  color: ${(props) => (props.type === "primary" ? colors.white : colors.black)};
+  font-size: 1.4rem;
   font-weight: 500;
-
-  @media screen and (max-width: 480px) {
-    font-size: 1.2rem;
-  }
+  text-align: center;
 `;

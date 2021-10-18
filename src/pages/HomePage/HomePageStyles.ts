@@ -111,7 +111,15 @@ export const HomePageNewFurniture = styled.div`
 `;
 
 export const HomePageButtonContainer = styled.div`
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+export const HomePageButton = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24rem;
 `;

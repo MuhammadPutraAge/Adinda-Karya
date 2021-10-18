@@ -199,3 +199,7 @@ export const getNewFurnitures = () => {
     return furnitures.slice(0, 8);
   }
 };
+
+export const getFurnitureById = (id: string) => {
+  return furnitures.find((f) => f.id === parseInt(id));
+};

@@ -10,6 +10,9 @@ import IcMeja from "./ic-meja.svg";
 import IcRanjang from "./ic-ranjang.svg";
 import IcRak from "./ic-rak.svg";
 import IcMejaHias from "./ic-meja-hias.svg";
+import IcArrowLeft from "./ic-arrow-left.svg";
+import IcRemove from "./ic-remove.svg";
+import IcAdd from "./ic-add.svg";
 
 export {
   Logo,
@@ -24,4 +27,7 @@ export {
   IcRanjang,
   IcRak,
   IcMejaHias,
+  IcArrowLeft,
+  IcRemove,
+  IcAdd,
 };
