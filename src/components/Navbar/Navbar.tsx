@@ -41,7 +41,10 @@ const Navbar = () => {
 
           <NavMainContainer>
             <NavSearchContainer>
-              <NavSearchInput type="search" placeholder="Lemari, Meja Kantor" />
+              <NavSearchInput
+                type="search"
+                placeholder="Lemari, Meja Kantor, Rak Buku"
+              />
               <NavSearchButtonContainer>
                 <NavSearchButton src={IcSearch} alt="Cari Furnitur" />
               </NavSearchButtonContainer>

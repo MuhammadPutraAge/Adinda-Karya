@@ -29,7 +29,7 @@ export const Container = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    padding: 0 3rem;
+    padding: 0 2rem;
   }
 `;
 

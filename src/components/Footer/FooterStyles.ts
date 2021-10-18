@@ -97,7 +97,7 @@ export const FooterAddress = styled.p`
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 `;
 
@@ -118,7 +118,7 @@ export const FooterLink = styled(Link)`
   font-size: 1.4rem;
   font-weight: 500;
   color: ${colors.grey};
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 
   &:last-child {
     margin-bottom: 0;
@@ -129,7 +129,7 @@ export const FooterLink = styled(Link)`
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 `;
 

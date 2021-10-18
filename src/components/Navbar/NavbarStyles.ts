@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { colors } from "../../utils";
 
 export const NavbarContainer = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 10rem;
   background-color: ${colors.black};
   position: sticky;
