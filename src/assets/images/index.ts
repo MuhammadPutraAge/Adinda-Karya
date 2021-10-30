@@ -6,6 +6,7 @@ import Furniture5 from "./furniture-5.jpg";
 import Furniture6 from "./furniture-6.jpg";
 import Furniture7 from "./furniture-7.jpg";
 import Furniture8 from "./furniture-8.jpg";
+import BgAuth from "./bg-auth.jpg";
 
 export {
   Furniture1,
@@ -16,4 +17,5 @@ export {
   Furniture6,
   Furniture7,
   Furniture8,
+  BgAuth,
 };

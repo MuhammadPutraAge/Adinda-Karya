@@ -23,7 +23,7 @@ import {
 const Footer = () => {
   const { pathname } = useLocation();
 
-  if (pathname === "/" || pathname === "/masuk" || pathname === "daftar") {
+  if (pathname === "/" || pathname === "/masuk" || pathname === "/daftar") {
     return <></>;
   }
 

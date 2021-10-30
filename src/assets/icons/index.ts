@@ -13,6 +13,8 @@ import IcMejaHias from "./ic-meja-hias.svg";
 import IcArrowLeft from "./ic-arrow-left.svg";
 import IcRemove from "./ic-remove.svg";
 import IcAdd from "./ic-add.svg";
+import IcShow from "./ic-show.svg";
+import IcHide from "./ic-hide.svg";
 
 export {
   Logo,
@@ -30,4 +32,6 @@ export {
   IcArrowLeft,
   IcRemove,
   IcAdd,
+  IcShow,
+  IcHide,
 };

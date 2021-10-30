@@ -18,6 +18,10 @@ export const CustomButtonContainer = styled.div<CustomButtonContainerProps>`
   border-radius: 0.4rem;
   text-decoration: none;
   cursor: pointer;
+
+  @media screen and (max-width: 480px) {
+    padding: 1rem 2.4rem;
+  }
 `;
 
 export const CustomButtonTitle = styled.p<CustomButtonTitleProps>`
@@ -25,4 +29,8 @@ export const CustomButtonTitle = styled.p<CustomButtonTitleProps>`
   font-size: 1.4rem;
   font-weight: 500;
   text-align: center;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.3rem;
+  }
 `;

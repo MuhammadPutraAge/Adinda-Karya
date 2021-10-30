@@ -55,8 +55,8 @@ const Navbar = () => {
           </NavMainContainer>
 
           <NavLinkContainer>
-            <NavLinkRegister to="#">Daftar</NavLinkRegister>
-            <NavLinkLogin to="#">Masuk</NavLinkLogin>
+            <NavLinkRegister to="/daftar">Daftar</NavLinkRegister>
+            <NavLinkLogin to="/masuk">Masuk</NavLinkLogin>
           </NavLinkContainer>
         </Nav>
       </Container>

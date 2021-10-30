@@ -7,7 +7,9 @@ import SizedBox from "./SizedBox/SizedBox";
 import Loading from "./Loading/Loading";
 import SectionTitle from "./SectionTitle/SectionTitle";
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
+import AuthWrapper from "./AuthWrapper/AuthWrapper";
 
+export * from "./Input";
 export {
   Navbar,
   Footer,
@@ -18,4 +20,5 @@ export {
   Loading,
   SectionTitle,
   ScrollToTop,
+  AuthWrapper,
 };
